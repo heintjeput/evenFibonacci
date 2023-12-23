@@ -14,9 +14,11 @@ import sys
 
 
 def CalculateSum(maxValue = 4000000):
+    # Set initial values
     newValue = 2
     prevValue = 0
     sumValue = 0
+    # Calculate the sum until maximum value is reached
     while newValue < maxValue:
         sumValue += newValue
         newValue, prevValue = 4*newValue+prevValue, newValue
